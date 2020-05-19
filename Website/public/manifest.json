@@ -1,0 +1,15 @@
+{
+  "short_name": "Freud-Online",
+  "name": "Freud-Online",
+  "icons": [
+    {
+      "src": "logo.png",
+      "type": "image/png",
+      "sizes": "243x243"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}

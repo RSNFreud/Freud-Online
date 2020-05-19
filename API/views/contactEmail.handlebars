@@ -1,0 +1,75 @@
+<table title="Quote Request" style="width: 100%;max-width:600px;margin:auto;margin-top:20px">
+    <tbody>
+        <tr>
+            <td>
+                <table style="width:80%; margin:auto">
+                    <tbody>
+                        <tr>
+                            <td>
+                                <img src="http://freud-online.co.uk/logo.png" alt="Logo"
+                                    style="height:30px; width:30px"></img>
+                            </td>
+                            <td style="text-align:right">
+                                <strong>Contact Form</strong>
+                                <br>
+                                {{currentDate}}
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <table style="width:100%;background-color: #F6F6F6;margin-top: 20px;padding:20px 0" ,>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <table style="width: 80%; margin:auto;">
+                                    <tbody>
+                                        <tr>
+                                            <td width="50%">
+                                                <strong>Full Name: </strong> <br></br>
+                                                {{name}}
+                                            </td>
+                                            <td width="50%" style="text-align: right">
+                                                <strong>Company Name: </strong> <br></br>
+                                                {{#if company}}{{company}}{{else}}N/A{{/if}}
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td width="50%" style="padding-top: 10px;">
+                                                <strong>Email Address: </strong> <br></br>
+                                                {{email}}
+                                            </td>
+                                            <td width=" 50%" style="text-align: right;padding-top:10px">
+                                                <strong>Contact Number: </strong>
+                                                <br></br> {{phone}}
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <table style="width: 80%; margin:auto;margin-top:30px">
+                    <tbody>
+                        <tr>
+                            <td style="padding-bottom: 10px">
+                                <strong>Comments/Questions</strong>
+                                <p style="margin-top: 10px"></p>
+                                {{#if comments}}{{comments}}{{else}}None provided{{/if}}
+
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+    </tbody>
+</table>

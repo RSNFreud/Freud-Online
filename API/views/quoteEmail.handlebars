@@ -1,0 +1,120 @@
+<table title="Quote Request" style="width: 100%;max-width:600px;margin:auto;margin-top:20px">
+    <tbody>
+        <tr>
+            <td>
+                <table style="width:80%; margin:auto">
+                    <tbody>
+                        <tr>
+                            <td>
+                                <img src="http://freud-online.co.uk/logo.png" alt="Logo"
+                                    style="height:30px; width:30px"></img>
+                            </td>
+                            <td style="text-align:right">
+                                <strong>Quote Request Form</strong>
+                                <br>
+                                {{currentDate}}
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <table style="width:100%;background-color: #F6F6F6;margin-top: 20px;padding:20px 0" ,>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <table style="width: 80%; margin:auto;">
+                                    <tbody>
+                                        <tr>
+                                            <td width="50%">
+                                                <strong>Full Name: </strong> <br></br>
+                                                {{name}}
+                                            </td>
+                                            <td width="50%" style="text-align: right">
+                                                <strong>Company Name: </strong> <br></br>
+                                                {{#if company}}{{company}}{{else}}N/A{{/if}}
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td width="50%" style="padding-top: 10px;">
+                                                <strong>Email Address: </strong> <br></br>
+                                                {{email}}
+                                            </td>
+                                            <td width=" 50%" style="text-align: right;padding-top:10px">
+                                                <strong>Contact Number: </strong>
+                                                <br></br> {{phone}}
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <table style="width: 80%; margin:auto;margin-top:30px">
+                    <tbody>
+                        <tr>
+                            <td style="padding-bottom: 10px">
+                                <strong>What does your company do?</strong>
+                                <p style="margin-top: 10px"></p>
+                                {{#if companyDescription}}{{companyDescription}}{{else}}None provided{{/if}}
+
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="padding-bottom: 10px">
+                                <strong>
+                                    Do you have a domain/URL in mind for your website?
+                                </strong>
+                                <p style="margin-top: 10px"></p>
+                                {{websiteURL}}
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="padding-bottom:  10px">
+                                <strong>What's your deadline for this project?</strong>
+                                <p style="margin-top: 10px"></p>
+                                {{deadline}}
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="padding-bottom:  10px">
+                                <strong>
+                                    Does your company have a logo/established image &
+                                    branding guidelines (e.g. fonts, colour schemes etc)?
+                                </strong>
+                                <p style="margin-top: 10px"></p>
+                                {{branding}}
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="padding-bottom:  10px">
+                                <strong>
+                                    Is there any specific styling you would like to see?
+                                </strong>
+                                <p style="margin-top: 10px"></p>
+                                {{#if styling}}{{styling}}{{else}}None provided{{/if}}
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="padding-bottom:  10px">
+                                <strong>
+                                    Is there anything else you’d like to tell us (Any ideas
+                                    you have for your website that you would like to see)?
+                                </strong>
+                                <p style="margin-top: 10px"></p>
+                                {{#if additionalInfo}}{{additionalInfo}}{{else}}None provided{{/if}}
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+    </tbody>
+</table>
